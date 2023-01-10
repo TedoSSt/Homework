@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 300px 1fr 330px;
+    grid-template-rows: 90px 1200px 120px;
+    grid-template-areas: "head head head"
+                          "leftmenu center rightmenu"
+                          "leftmenu bottom bottom";
+}
+header{
+    grid-area: head;
+    
+    border: 2px solid black;
+}
+header div{
+    
+    grid-area: head;
+    
+}
+#leftm{
+    
+    grid-area: leftmenu;
+    border: 2px solid black;
+    background-color: rgb(116, 155, 116);
+}
+#leftm ul li{
+    font-size: 15pt;
+    list-style: none;
+    padding: 10px 10px 10px 0px;
+    font-weight: bold;
+    margin: 0;
+}
+#rightm{
+    text-align: center;
+    grid-area: rightmenu;
+    border: 2px solid black;
+
+}
+section{
+    
+    grid-area: center;
+    border: 2px solid black;
+    
+   
+                          
+   
+
+}
+section img {
+    width: 220px;
+}
+#j1{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 70px 0px;
+    text-align: center;
+   
+}
+
+#j1 p{
+    margin: 0;
+    font-size: 10pt;
+}
+#j2{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px 40px 0px;
+    text-align: center;
+}
+#sreda{
+    text-align: center;
+    
+}
+
+
+footer{
+    background-color: rgb(25, 102, 32);
+    grid-area: bottom;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+#rightm img{
+    width: 180px;
+    padding: 10px 0 10px 0;
+}
+ul{
+    background-color: rgb(198, 194, 194);
+    margin: 0;
+}
+p{
+    padding:0px;
+    
+}
+footer div {
+    text-align: center;
+}
+
